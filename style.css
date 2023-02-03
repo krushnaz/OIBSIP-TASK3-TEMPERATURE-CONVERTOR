@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(11, 44, 49);
+    background-color: rgb(218, 234, 217);
+
+}
+
+.container {
+    width: 96%;
+    margin: 1rem auto;
+    max-width: 700px;
+    box-shadow: rgba(11, 44, 49, 0.16) 0px 3px 6px, rgba(11, 44, 49, 0.23) 0px 3px 6px;
+    background-color: rgb(249, 251, 248);
+}
+
+/* header */
+header {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a h1 {
+    color: rgb(11, 44, 49);
+    font-size: 1.4rem;
+}
+
+header a h1:hover {
+    color: rgb(5, 30, 34);
+    text-decoration: underline;
+}
+
+
+/* my-form */
+.convert-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+}
+
+.convert-form>div {
+    margin-bottom: 1.2rem;
+}
+
+label,
+span {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.display-result {
+    height: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-degree,
+#degree-type,
+#convert-type,
+.convert-btn {
+    padding: .5rem .6rem;
+    font-size: 1.2rem;
+    width: 12rem;
+    border-radius: 5px;
+}
+
+.input-degree,
+#degree-type,
+#convert-type {
+    background-color: rgb(251, 255, 255);
+    outline: none;
+    border: 2px solid rgb(187, 204, 186);
+}
+
+.convert-btn {
+    background-color: rgb(65, 95, 66);
+    color: rgb(249, 251, 248);
+    border: 2px solid rgb(65, 95, 66);
+}
+
+.error {
+    color: red;
+    text-transform: capitalize;
+    padding: 1rem 3rem;
+    line-height: 1.5;
+    height: 2rem;
+}
+
+.display {
+    padding: 1rem 3rem;
+}
+
+.display-result {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 6rem;
+    }
+
+    header a h1 {
+        font-size: 2rem;
+    }
+
+    .convert-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .convert-form>div {
+        margin-right: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    #degree-type,
+    #convert-type,
+    .convert-btn {
+        width: auto;
+    }
+
+
+    #degree-type,
+    #convert-type {
+        font-size: 1.2rem;
+    }
+
+    .convert-btn {
+        align-self: flex-end;
+    }
+
+    .error {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+    .display {
+        padding: 1rem 2rem;
+    }
+}

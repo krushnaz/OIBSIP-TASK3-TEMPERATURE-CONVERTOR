@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Temperature Converter</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<a href="#"><h1>Temperature Converter</h1></a>
+		</header>
+		<div class="container">
+			<form class="convert-form" novalidate>
+				<div class="degree">
+					<label>Degrees:</label>
+					<input type="number" class="input-degree" />
+				</div>
+				<div class="type">
+					<label>Type:</label>
+					<select id="degree-type">
+						<option value="celsius">Celsius</option>
+						<option value="fahrenheit">Fahrenheit</option>
+						<!-- <option value="kelvin">Kelvin</option> -->
+					</select>
+				</div>
+				<div class="convert-to">
+					<label>Convert To:</label>
+					<select id="convert-type">
+						<option value="celsius">Celsius</option>
+						<option value="fahrenheit">Fahrenheit</option>
+						<!-- <option value="kelvin">Kelvin</option> -->
+					</select>
+				</div>
+				<button class="convert-btn">Convert</button>
+			</form>
+			<div class="error"></div>
+			<div class="display">
+				<span>Result:</span>
+				<p class="display-result"></p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<!-- <script src="./js/convertFunctions.js"></script> -->
+	</body>
+</html>
